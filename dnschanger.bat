@@ -1,6 +1,6 @@
 @echo off
 title DNS Server Configuration
-:: Define DNS servers
+
 set shecan1_dns=178.22.122.100
 set shecan2_dns=185.51.200.2
 
@@ -10,19 +10,19 @@ set electro2_dns=78.157.42.101
 set radar1_dns=10.202.10.10
 set radar2_dns=10.202.10.11
 
-:: Define color codes
+
 set color_title=0A
 set color_choices=0B
 set color_error=0C
 
-:: Set color for title
+
 color %color_title%
 echo =================================
 echo    DNS Server Configuration
 echo =================================
 echo.
 
-:: Set color for choices
+
 color %color_choices%
 echo Choose an option:
 echo 1. ^(Shecan.ir^)
@@ -31,7 +31,6 @@ echo 3. ^(Radar.game^)
 echo 4. ^(Show DNS^)
 echo 5. ^(Remove DNS^)
 
-:: Reset color to default
 color
 
 set /p choice=Enter choice : 
